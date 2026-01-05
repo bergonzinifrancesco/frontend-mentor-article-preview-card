@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.card-header {
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+    font-weight: bold;
+    background-color: white;
+    color: #48556A;
+}
+
+.card-text {
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+    color: #6E8098;
+}
