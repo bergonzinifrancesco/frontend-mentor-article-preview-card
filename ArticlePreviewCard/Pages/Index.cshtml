@@ -27,9 +27,16 @@
                         <div id="Michelle">Michelle Appleton</div>
                         <div id="date">28 Jun 2020</div>
                     </div>
-                    <img src="images/icon-share.svg" alt="Share icon" width="32px" height="32px" class="p-2 rounded-5" style="background-color: #ECF2F8"/>
+                    <img src="images/icon-share.svg" alt="Share icon" width="32px" height="32px" class="p-2 rounded-5" style="background-color: #ECF2F8" data-bs-toggle="tooltip" data-bs-title="Tooltip"/>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+    </script>
+}
