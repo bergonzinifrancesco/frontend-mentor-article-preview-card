@@ -19,3 +19,23 @@
     letter-spacing: 0.12%;
     color: #6E8098;
 }
+
+#Michelle {
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+    font-weight: bold;
+    color: #48556A;  
+}
+
+#date {
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+    font-weight: normal;
+    color: #9DAEC2;
+}

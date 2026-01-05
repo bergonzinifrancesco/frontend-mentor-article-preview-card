@@ -4,26 +4,31 @@
     ViewData["Title"] = "Frontend Mentor";
 }
 
-<div class="card rounded-end-4 rounded-start-4" style="max-width: 730px;">
+<div class="card rounded-end-3 rounded-start-3" style="max-width: 730px;">
     <div class="row g-0">
-        <div class="col-md-4">
-            <img class="img-fluid rounded-start-4 w-100 h-100 align-self-stretch" src="~/images/drawers.jpg" alt="Drawers image"/>
+        <div class="col-md-5">
+            <img class="img-fluid rounded-start-3 w-100 h-100 align-self-stretch" src="~/images/drawers.jpg" alt="Drawers image"/>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-7 p-4">
             <div class="card-body">
-                <div class="card-header mb-2">
+                <div class="card-header mb-4 border-bottom-0 p-0">
                     Shift the overall look and feel by adding these wonderful
                     touches to furniture in your home
                 </div>
-                <div class="card-text">
+                <div class="card-text mb-4 border-0">
                     Ever been in a room and felt like something was missing? Perhaps
                     it felt slightly bare and uninviting. I’ve got some simple tips
                     to help you make any room feel complete.
                 </div>
-            </div>
-            <div class="card-footer bg-white">
-                Michelle Appleton
-                28 Jun 2020
+                
+                <div class="card-footer bg-white border-0 p-0 m-0 container-fluid hstack gap-3">
+                    <img src="images/avatar-michelle.jpg" alt="Michelle avatar" class="rounded rounded-5" style="width: 40px; height: 40px"/>
+                    <div class="vstack align-self-center me-2">
+                        <div id="Michelle">Michelle Appleton</div>
+                        <div id="date">28 Jun 2020</div>
+                    </div>
+                    <img src="images/icon-share.svg" alt="Share icon" width="32px" height="32px" class="p-2 rounded-5" style="background-color: #ECF2F8"/>
+                </div>
             </div>
         </div>
     </div>
