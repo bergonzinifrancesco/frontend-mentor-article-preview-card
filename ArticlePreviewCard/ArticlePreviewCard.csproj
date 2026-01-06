@@ -50,4 +50,9 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AspNetStatic" Version="0.27.2" />
+      <PackageReference Include="AspNetStaticContrib" Version="1.2.1" />
+    </ItemGroup>
+
 </Project>
