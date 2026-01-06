@@ -21,7 +21,16 @@
                     to help you make any room feel complete.
                 </div>
                 
-                <div class="card-footer bg-white border-0 p-0 m-0 container-fluid hstack gap-3">
+                <div id="popover-template" class="container d-none">
+                    <div class="container hstack gap-3 px-3 py-1">
+                        <span id="share">SHARE</span>
+                        <img src="images/icon-facebook.svg" alt="Facebook icon"/>
+                        <img src="images/icon-twitter.svg" alt="Twitter icon"/>
+                        <img src="images/icon-pinterest.svg" alt="Pinterest icon"/>
+                    </div>
+                </div>
+                
+                <div id="card-footer" class="card-footer bg-white border-0 p-0 m-0 container-fluid hstack gap-3">
                     <img src="images/avatar-michelle.jpg" alt="Michelle avatar" class="rounded rounded-5" style="width: 40px; height: 40px"/>
                     <div class="vstack align-self-center me-2">
                         <div id="Michelle">Michelle Appleton</div>
@@ -39,15 +48,6 @@
                              style="background-color: #ECF2F8"
                         />
                     </button>
-                    
-                    <div id="popover-template" class="container d-none">
-                        <div class="container hstack gap-3 px-3 py-1">
-                            <span>SHARE</span>
-                            <img src="images/icon-facebook.svg" alt="Facebook icon"/>
-                            <img src="images/icon-twitter.svg" alt="Twitter icon"/>
-                            <img src="images/icon-pinterest.svg" alt="Pinterest icon"/>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -58,12 +58,15 @@
     <script>
         const trigger = document.getElementById('popover-btn');
         const template = document.getElementById('popover-template');
-        new bootstrap.Popover(trigger, {
-            html: true,
-            sanitize: false,
-            container: 'body',
-            content: () => template.innerHTML,
-            customClass: "hstack gap-3"
-        });
+
+        if (window.screen.width > 768) {
+            new bootstrap.Popover(trigger, {
+                html: true,
+                sanitize: false,
+                container: 'body',
+                content: () => template.innerHTML,
+                customClass: "hstack gap-3"
+            })
+        }
     </script>
 }
