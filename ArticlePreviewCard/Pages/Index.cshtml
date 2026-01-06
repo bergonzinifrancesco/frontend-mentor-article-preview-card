@@ -27,7 +27,27 @@
                         <div id="Michelle">Michelle Appleton</div>
                         <div id="date">28 Jun 2020</div>
                     </div>
-                    <img src="images/icon-share.svg" alt="Share icon" width="32px" height="32px" class="p-2 rounded-5" style="background-color: #ECF2F8" data-bs-toggle="tooltip" data-bs-title="Tooltip"/>
+                    <button
+                        class="btn"
+                        data-bs-toggle="popover"
+                        id="popover-btn"
+                        data-bs-placement="top"
+                    >
+                        <img src="images/icon-share.svg"
+                             alt="Share icon"
+                             width="32px" height="32px" class="p-2 rounded-5"
+                             style="background-color: #ECF2F8"
+                        />
+                    </button>
+                    
+                    <div id="popover-template" class="container d-none">
+                        <div class="container hstack gap-3 px-3 py-1">
+                            <span>SHARE</span>
+                            <img src="images/icon-facebook.svg" alt="Facebook icon"/>
+                            <img src="images/icon-twitter.svg" alt="Twitter icon"/>
+                            <img src="images/icon-pinterest.svg" alt="Pinterest icon"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,7 +56,14 @@
 
 @section Scripts {
     <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+        const trigger = document.getElementById('popover-btn');
+        const template = document.getElementById('popover-template');
+        new bootstrap.Popover(trigger, {
+            html: true,
+            sanitize: false,
+            container: 'body',
+            content: () => template.innerHTML,
+            customClass: "hstack gap-3"
+        });
     </script>
 }

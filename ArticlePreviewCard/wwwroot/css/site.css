@@ -39,3 +39,25 @@
     font-weight: normal;
     color: #9DAEC2;
 }
+.popover-inner {
+    --bs-popover-bg: #48556A;
+}
+.popover-body {
+    --bs-popover-body-bg: #48556A;
+    background-color: #48556A;
+    color: #9DAEC2;
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.25em;
+    font-weight: normal;
+    border-radius: var(--bs-border-radius-xl) !important;
+}
+.popover-header {
+    --bs-popover-header-bg: #48556A;
+    color: #9DAEC2;
+}
+.popover-arrow {
+    --bs-popover-bg: #48556A;
+}
